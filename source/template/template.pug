@@ -1,0 +1,15 @@
+block variables
+include mixins/mixins
+
+doctype html
+html(lang="ru")
+  include ./common/head
+  body
+    .wrapper
+      .maincontent
+        include ./common/header
+        main.main
+          block content
+
+
+    include ./common/scripts
