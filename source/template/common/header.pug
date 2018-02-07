@@ -1,0 +1,35 @@
+header.header
+  .container
+    .header__logo
+      a(href="#").logo
+        img(class="logo__img" src="/logo.png", alt="silver fruits")
+    .header__info
+      ul.advantages
+        li.advantages__item
+          .advantages
+            svg.advantages__icon
+              use(xlink:href=`/assets/img/sprite.svg#dna`)
+            .advantages__text
+              p.
+                Сбалансированный состав
+        li.advantages__item
+          .advantages
+            svg.advantages__icon
+              use(xlink:href=`/assets/img/sprite.svg#finger`)
+            .advantages__text
+              p.
+                Одобрен специалистами
+
+        li.advantages__item
+          .advantages
+            svg.advantages__icon
+              use(xlink:href=`/assets/img/sprite.svg#timer`)
+            .advantages__text
+              p.
+                Быстрый результат
+          
+    .header__contacts
+      a.collback(href="#")
+        svg.collback__icon
+          use(xlink:href=`/assets/img/sprite.svg#finger`)
+        span.collback__text Заказать звонок

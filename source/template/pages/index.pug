@@ -1,0 +1,65 @@
+extends ../template
+
+block variables
+  - var title = "Main page"
+
+block content
+  section.action
+    .container
+      .action__inner
+        .action__info
+          .info
+            .info__title
+              h1.title.title_color_white Тестовое задание по верстке
+            .info__descr
+              p.
+                Lorem ipsum dolor sit <span>Silver fruits Fruits</span> consectetuer adipiscing elit
+        .products
+          .products__icon
+          .products__bottom
+            .products__left
+              .products__descr Услинение эффекта похудения в 4 раза
+            .products__right
+              .products__descr серебряные капли
+            
+        .action__order
+          .order
+            h2.order__label Акция
+            .order__descr
+              h3.order__text Успей заказать
+              .order__challenge с 70% скидкой!
+
+            span.order__price 990 &#8399;
+
+            .order__common-price
+              span.order__price-descr обычная цена
+              span.order__ex-price 3300 руб.
+
+            .form
+              form(id="orderform" action="#")
+                label(class="form__label" for="name")
+                input(class="form__phone" id="name" type="text" name="name")
+                label(class="form__label" for="tel")
+                input(class="form__phone" id="tel" type="tel" name="tel")
+
+  section.structure
+    .container
+      .structure__inner
+        .structure__info
+          .title.title_color_black.title_with-bg Cum sociis natoque
+          .structure__text
+            p.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            p.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+  section.consist
+    .container
+      .consist__inner
+        .title.title_color_yellow Donec pede justo
+        ul.cards
+          li.cards__item
+            .cards__pic
+            .cards__title Fringilla vel
+            .cards__descr
+              p.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
