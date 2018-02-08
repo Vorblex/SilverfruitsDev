@@ -23,7 +23,7 @@ body {
     position: relative;
     margin: 0;
     background: #fff;
-    line-height: 1.66;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -41,8 +41,8 @@ body {
 }
 
 .container {
-    padding: 0 30px;
-    max-width: containerMaxWidth;
+    padding: 0 15px;
+    max-width: $containerMaxWidth;
     margin: 0 auto; 
 }
 

@@ -1,0 +1,132 @@
+.order {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 370px;
+    height: 489px;
+    padding: 64px 25px 37px 25px;
+    background: url('/assets/img/order_bg.png') center no-repeat, linear-gradient(43deg, white 0%, #afafaf 59%, #d7d7d7 59%, white 89%, #dedede 100%);
+    background-size: cover;
+
+    &__label {
+        position: absolute;
+        top: 0;
+        right: 27px;
+        width: 70px;
+        height: 33px;
+        text-align: center;
+        @include roboto(bold);
+        font-size: 14px;
+        padding-top: 12px; 
+        background: $red;
+        color: $white;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border: solid transparent 22px;
+            border-top-color: $red;
+            border-right-width: 35px;
+            border-left-width: 35px;
+        }
+    }
+
+    &__descr {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        @include roboto;
+        font-size: 20px;
+        color: $black;
+        line-height: 1.4;
+    }
+
+    &__discount {
+        position: relative;
+
+        span {
+            display: inline-block;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 55px;
+            right: 17px;
+            bottom: 0;
+            background-color: $yellow;
+            box-shadow: 2.19px 13.828px 5px 0px rgba(37, 42, 48, 0.29);
+            border-radius: 4px;
+        }
+    }
+
+    &__discount-text {
+        position: relative;
+        display: block;
+        @include roboto(bold);
+        font-size: 36px;
+        line-height: 1.66;
+        color: $black;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: 59px;
+        margin-bottom: 3px;
+    }
+
+    &__current-price {
+        width: 60%;
+        @include roboto(bold);
+        font-size: 48px;
+        color: $red;
+
+        .order__symbol {
+            @include ptsans;
+        }
+    }
+
+    &__common-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 2px;
+        margin-bottom: -4px;
+    }
+    
+    &__price-descr {
+        @include roboto;
+        font-size: 14px;
+        color: $gray;
+        line-height: 0.9;
+    }
+    
+    &__ex-price {
+        position: relative;
+        line-height: 1.2;
+        @include roboto;
+        font-size: 24px;
+        color: $black;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 68px;
+            height: 2px;
+            top: 12px;
+            left: 6px;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-26deg);
+            background: #d40619;
+        }
+    }
+}

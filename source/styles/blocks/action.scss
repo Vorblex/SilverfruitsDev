@@ -1,0 +1,23 @@
+.action {
+    position: relative;
+    z-index: 1;
+    background: #1f2147 url('/assets/img/action-girl_bg.png') -99px 85% no-repeat;
+    background-size: auto 113%;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 21px;
+    }
+
+    &__info {
+        max-width: 400px;
+        margin-right: 60px;
+    }
+
+    &__order {
+        min-height: 100%;
+        padding-top: 87px;
+    }
+}

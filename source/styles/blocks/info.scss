@@ -1,0 +1,39 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    &__descr {
+        position: relative;
+        padding-top: 15px;
+        margin-right: 30px;
+        text-align: center;
+
+        p {
+            @include myriad;
+            font-size: 22px;
+            color: $violet;
+            line-height: 1.4;
+        }
+        
+        span {
+            color: $yellow;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        @include centered(x);
+        left: 50%;
+        transform: translateX(-23%);
+        fill: #525171;
+        top: 0px;
+        width: 67px;
+        height: 8px;
+    }
+}

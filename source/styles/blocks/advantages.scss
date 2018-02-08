@@ -1,0 +1,46 @@
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3px;
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 165px;
+        margin-right: 37px;
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+
+    &__pic {
+        height: 40px;
+        width: 35px;
+        margin-right: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        max-width: 32px;
+        max-height: 32px;
+        fill: $yellow;
+
+        &_finger {
+            align-self: flex-start;
+        }
+    }
+
+    &__text {
+        p {
+            @include roboto;
+            font-size: 14px;
+            line-height: 1.1;
+            color: $gray;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.collback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $green;
+    border-radius: 30px;
+    padding: 8px 18px 8px 13px;
+    max-width: 200px;
+    text-decoration: none;
+
+    &__icon {
+        width: 21px;
+        height: 21px;
+        fill: $white;
+        margin-right: 10px;
+    }
+
+    &__text {
+            @include roboto(medium);
+            font-size: 16px;
+            color: $white;
+    }
+}

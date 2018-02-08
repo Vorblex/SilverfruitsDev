@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        @include roboto(bold);
+        font-size: 14px;
+        color: $black;
+        text-transform: uppercase;
+        padding-left: 7px;
+        line-height: 1.4;
+    }
+    
+    &__input {
+        height: 47px;
+        padding: 0 10px;
+        margin-bottom: 7px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-color: rgb(232, 232, 232);
+        box-shadow: 2.5px 4.33px 5px 0px rgba(37, 42, 48, 0.47);
+        @include roboto;
+        font-size: 18px;
+        color: $black;
+
+        &:last-of-type {
+            margin-bottom: 14px;
+        }
+    }
+
+
+    &__btn {
+        padding: 21px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(212, 6, 25);
+        box-shadow: 2.5px 4.33px 21px 0px rgba(212, 6, 25, 0.47);
+        @include roboto;
+        font-size: 24px;
+        color: $white;
+        cursor: pointer;
+    }
+
+}
+  
+  

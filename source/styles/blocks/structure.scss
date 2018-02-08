@@ -1,0 +1,52 @@
+.structure {
+    position: relative;
+    padding: 108px 0px;
+    background: $white url('/assets/img/structure_bg.png') 0px 0px no-repeat;
+    background-size: auto;
+    min-height: 600px;
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 9px;
+        display: inline-block;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 195px;
+            right: -128px;
+            bottom: 4px;
+            background-color: #ffe200;
+        }
+
+    }
+
+    &__text {
+        width: 560px;
+
+        p {
+            @include myriad;
+            font-size: 18px;
+            color: $black;
+            line-height: 1.7;
+            margin-bottom: 29px;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 491px;
+        bottom: -55px;
+        right: 250px;
+        background: url('/assets/img/structure_bg-shape.png') center no-repeat;
+        background-size: cover;
+    }
+}

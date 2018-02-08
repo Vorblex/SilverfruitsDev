@@ -1,0 +1,208 @@
+.products {
+    width: 560px;
+    min-height: 392px;
+    position: absolute;
+    bottom: -60px;
+    transform: translateX(-64%);
+
+    &__polywhite, &__polyblack {
+        position: absolute;
+        max-width: 80%;
+        max-height: 80%
+    }
+    
+    &__polywhite {
+        bottom: 19%;
+        left: 15%;
+    }
+
+    &__polyblack {
+        left: 0px;
+        bottom: 0px;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #eee;
+        top: 50%;
+        left: 50%;
+        transform: translate(-59%, -37%);
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            @include centered;
+            background: #16162d;
+        }
+        
+        &::before {
+            width: 3px;
+            height: 20px;
+        }
+
+        &::after {
+            width: 20px;
+            height: 3px;
+        }
+        
+        a {
+            position: absolute;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &__left {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 321px;
+        background: url(/assets/img/box-black.png) 20px 68px no-repeat;
+        background-size: 77%;
+    }
+
+    &__descr-left {
+        position: absolute;
+            bottom: 18px;
+            left: 83px;
+            width: 194px;
+            height: 57px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 1px;
+            width: 195px;
+            height: 57px;
+            transform: skewX(42deg);
+            background: linear-gradient(81deg, white 13%, #afafaf 56%, #d7d7d7 57%, white 71%, #dedede 77%);
+            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.32);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -38px;
+            left: -6px;
+            width: 5px;
+            height: 124px;
+            -webkit-transform: rotate(-42deg);
+            -ms-transform: rotate(-42deg);
+            transform: rotate(-45.4deg);
+            background: #2ea8df;
+        }
+        
+    }
+
+    &__text {
+        position: relative;
+        display: block;
+        @include roboto(bold);
+        font-size: 16px;
+        color: $black;
+        padding: 7px 9px;
+        line-height: 1.2;
+
+        span {
+            display: inline-block;
+            padding: 0 12px;
+        }
+    }
+
+    &__left-riangle {
+        position: absolute;
+        width: 100px;
+        height: 60px;
+        top: -13px;
+        left: -21px;
+        z-index: -1;
+        background: #2ea8df;
+    }
+
+    &__row {
+        position: absolute;
+        bottom: 154px;
+        left: -16px;
+        width: 146px;
+        height: 123px;
+        background: url(/assets/img/pink-line.svg) 44px 83px no-repeat,
+                    url(/assets/img/pink-row.svg) right bottom no-repeat;
+    }
+
+    &__row-text {
+        display: inline-block;
+        @include myriad;
+        font-size: 22px;
+        color: $pink;
+        text-align: center;
+        padding-right: 37px;
+        line-height: 1.1;
+        
+        span {
+            display: inline-block;
+        }
+    }
+    
+    &__right {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 265px;
+        background: url(/assets/img/box-yellow.png) 3px 28px no-repeat;
+        background-size: 87%
+    }
+
+    &__descr-right {
+        position: absolute;
+            bottom: 18px;
+            left: 83px;
+            width: 194px;
+            height: 57px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -34px;
+            width: 177px;
+            height: 57px;
+            transform: skewX(42deg);
+            background: linear-gradient(77deg, white 0%, #afafaf 66%, #d7d7d7 68%, white 85%, #dedede 91%);
+            box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.32);
+            border-radius: 50px 0px 0px 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 66px;
+            height: 66px;
+            top: -5px;
+            left: -45px;
+            background: url('/assets/img/sphere.png') no-repeat;
+        }
+    }
+
+    &__effect {
+        position: absolute;
+        right: 262px;
+        bottom: -10px;
+        width: 100px;
+        height: 139px;
+        background: url(/assets/img/box-shadow.png) center no-repeat;
+        background-size: cover;
+    }
+
+    &__text_right {
+        padding: 7px 27px;
+    }
+
+}
+

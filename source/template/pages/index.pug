@@ -12,46 +12,57 @@ block content
             .info__title
               h1.title.title_color_white Тестовое задание по верстке
             .info__descr
+              svg.info__icon
+                use(xlink:href=`/assets/img/sprite.svg#wave`)
               p.
                 Lorem ipsum dolor sit <span>Silver fruits Fruits</span> consectetuer adipiscing elit
-        .products
-          .products__icon
-          .products__bottom
-            .products__left
-              .products__descr Услинение эффекта похудения в 4 раза
-            .products__right
-              .products__descr серебряные капли
             
         .action__order
           .order
-            h2.order__label Акция
+            .order__label Акция
             .order__descr
               h3.order__text Успей заказать
-              .order__challenge с 70% скидкой!
-
-            span.order__price 990 &#8399;
-
-            .order__common-price
-              span.order__price-descr обычная цена
-              span.order__ex-price 3300 руб.
-
-            .form
-              form(id="orderform" action="#")
-                label(class="form__label" for="name")
-                input(class="form__phone" id="name" type="text" name="name")
-                label(class="form__label" for="tel")
-                input(class="form__phone" id="tel" type="tel" name="tel")
+              .order__discount
+                .order__discount-text с <span> </span><span> </span> 70% скидкой!
+            .order__price
+              .order__current-price 990<span class="order__symbol">&#8399</span>
+              .order__common-price
+                span.order__price-descr обычная цена
+                span.order__ex-price 3300 руб.
+            form(id="orderform" action="#")
+              .form
+                label(class="form__label" for="name") имя
+                input(class="form__input" id="name" type="text" name="name" placeholder="Ваше имя")
+                label(class="form__label" for="tel") телефон
+                input(class="form__input" id="tel" type="tel" name="tel" placeholder="Ваш телефон")
+                button(class="form__btn" type="submit" id="formbtn") Тест Тест Тест Тест
+        .products
+          img(class="products__polywhite" src="/assets/img/polygon-white.svg", alt="polygon")
+          img(class="products__polyblack" src="/assets/img/polygon-black.svg", alt="polygon")
+          .products__left
+          a(href="#").products__icon
+          .products__row
+            span.products__row-text  Aenean <span>commodo с ligula</span>
+          .products__effect
+          .products__descr-left
+            .products__left-riangle
+            .products__text Услинение эффекта <span>похудения в 4 раза</span>
+          .products__right
+            .products__descr-right
+              .products__text.products__text_right серебряные капли
 
   section.structure
     .container
       .structure__inner
         .structure__info
-          .title.title_color_black.title_with-bg Cum sociis natoque
+          .structure__title
+            .title.title_color_black Cum sociis natoque
           .structure__text
             p.
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             p.
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
   section.consist
     .container
       .consist__inner

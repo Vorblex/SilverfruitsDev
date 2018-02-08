@@ -1,0 +1,16 @@
+.title {
+    position: relative;
+    @include myriad;
+    line-height: 1;
+    font-size: 48px;
+    color: $white;
+    margin-bottom: 20px;
+
+    &_color_black {
+        color: $black;
+    }
+
+    &_color_yellow {
+        color: $yellow;
+    }
+}
