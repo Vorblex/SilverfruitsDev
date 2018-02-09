@@ -13,7 +13,7 @@ block content
               h1.title.title_color_white Тестовое задание по верстке
             .info__descr
               svg.info__icon
-                use(xlink:href=`/assets/img/sprite.svg#wave`)
+                use(xlink:href="/assets/img/sprite.svg#wave")
               p.
                 Lorem ipsum dolor sit <span>Silver fruits Fruits</span> consectetuer adipiscing elit
             
@@ -25,7 +25,7 @@ block content
               .order__discount
                 .order__discount-text с <span> </span><span> </span> 70% скидкой!
             .order__price
-              .order__current-price 990<span class="order__symbol">&#8399</span>
+              .order__current-price 990<span class="order__symbol">&#8399;</span>
               .order__common-price
                 span.order__price-descr обычная цена
                 span.order__ex-price 3300 руб.
@@ -66,11 +66,40 @@ block content
   section.consist
     .container
       .consist__inner
-        .title.title_color_yellow Donec pede justo
+        .consist__title
+          .title.title_color_yellow Donec pede justo
         ul.cards
           li.cards__item
             .cards__pic
-            .cards__title Fringilla vel
-            .cards__descr
-              p.
-                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+              img(class="cards__img" src="/assets/img/item1.png", alt="element")
+            .cards__text 
+              .cards__title Fringilla vel
+              .cards__descr
+                p.
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+          li.cards__item
+            .cards__pic
+              img(class="cards__img" src="/assets/img/item2.png", alt="element")
+            .cards__text 
+              .cards__title Aliquet
+              .cards__descr
+                p.
+                  Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+
+          li.cards__item
+            .cards__pic
+              img(class="cards__img" src="/assets/img/item3.png", alt="element")
+            .cards__text 
+              .cards__title Vulputate eget arcu
+              .cards__descr
+                p.
+                  Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+
+          li.cards__item
+            .cards__pic
+              img(class="cards__img" src="/assets/img/item4.png", alt="element")
+            .cards__text 
+              .cards__title Enim justo
+              .cards__descr
+                p.
+                  Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.

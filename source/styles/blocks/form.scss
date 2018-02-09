@@ -19,7 +19,7 @@
         outline: none;
         border-radius: 4px;
         background-color: rgb(232, 232, 232);
-        box-shadow: 2.5px 4.33px 5px 0px rgba(37, 42, 48, 0.47);
+        box-shadow: rem(2.5px) rem(4.33px) rem(5px) 0rem rgba(37, 42, 48, 0.47);
         @include roboto;
         font-size: 18px;
         color: $black;
@@ -34,12 +34,18 @@
         padding: 21px 10px;
         border: none;
         border-radius: 4px;
-        background-color: rgb(212, 6, 25);
-        box-shadow: 2.5px 4.33px 21px 0px rgba(212, 6, 25, 0.47);
+        background-color: $red;
+        box-shadow: rem(2.5px) rem(4.33px) rem(21px) 0rem rgba(212, 6, 25, 0.47);
         @include roboto;
         font-size: 24px;
         color: $white;
         cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: $yellow;
+            color: $red;
+        }
     }
 
 }

@@ -1,5 +1,11 @@
 .logo {
-     text-decoration: none;
+    display: block;
+    text-decoration: none;
+
+    @include phone {
+        width: 300px;
+        margin: auto;
+    }
 
      &__img {
          max-width: 100%;

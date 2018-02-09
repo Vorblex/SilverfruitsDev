@@ -6,10 +6,15 @@ html {
        font-size: 15px;
    }
    @include tablet {
-       font-size: 14px;
+       font-size: 13px;
+
    }
    @include phone {
-       font-size: 13px;
+       font-size: 9px;
+
+       @include landscape {
+           font-size: 10px;
+       }
    }
 }
 

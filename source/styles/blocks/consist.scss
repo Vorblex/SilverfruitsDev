@@ -2,7 +2,11 @@
     background: $blue;
 
     &__inner {
-        padding: 20px 0px;
+        padding: 18px 0px;
         text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 62px;
     }
 }

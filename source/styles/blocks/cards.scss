@@ -1,0 +1,47 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+
+    &__item {
+        display: flex;
+        flex: 1 1 400px;
+        margin-right: 30px;
+        margin-bottom: 76px;
+    }
+
+    &__pic {
+        width: 34.19%;
+        padding-top: 8px;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        width: 65.81%
+    }
+
+    &__title {
+        @include myriad;
+        color: $silver;
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 13px;
+    }
+
+    &__descr {
+        
+        p {
+            @include myriad;
+            color: $violet;
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.7;
+        }
+    }
+
+}

@@ -4,15 +4,31 @@
     align-items: flex-start;
     padding-top: 3px;
 
+    @include laptop {
+        justify-content: center;
+        margin-right: -35px;
+    }
+
+    @include phone {
+        margin-right: 0;    
+    }
+
     &__item {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        max-width: 165px;
-        margin-right: 37px;
+        margin-right: 30px;
 
-        &:nth-child(2) {
-            margin-right: 0;
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        @include hd {
+            width: 165px;
+        }
+
+        @include phone {
+            justify-content: space-around;    
         }
     }
 
@@ -23,6 +39,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include phone {
+            max-width: 3rem;
+            max-height: 3rem;
+        }
     }
 
     &__icon {
@@ -30,17 +51,25 @@
         max-height: 32px;
         fill: $yellow;
 
-        &_finger {
-            align-self: flex-start;
+        @include phone {
+            justify-content: center;
+            max-width: 3rem;
+            max-height: 3rem;
         }
     }
 
     &__text {
+        
+        @include phone { 
+         display: none;   
+        }
+        
         p {
             @include roboto;
             font-size: 14px;
             line-height: 1.1;
             color: $gray;
         }
+        
     }
 }

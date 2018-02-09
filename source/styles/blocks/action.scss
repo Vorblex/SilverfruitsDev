@@ -1,23 +1,53 @@
 .action {
     position: relative;
     z-index: 1;
-    background: #1f2147 url('/assets/img/action-girl_bg.png') -99px 85% no-repeat;
+    background: #1f2147 url('/assets/img/action-girl_bg.png') -11px 85% no-repeat;
     background-size: auto 113%;
 
+    @include laptop {
+        background-position: -300px 85%;
+    }
+    
     &__inner {
         position: relative;
         display: flex;
         justify-content: flex-end;
         padding-bottom: 21px;
+
+        @include laptop {
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 350px;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            padding-bottom: 340px;
+        }
     }
 
     &__info {
         max-width: 400px;
         margin-right: 60px;
+
+        @include laptop {
+            padding-top: 40px;
+            margin-right: 0px;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            padding-top: 0px;
+            padding-bottom: 15px;
+        }
     }
 
     &__order {
         min-height: 100%;
         padding-top: 87px;
+
+        @include laptop {
+            padding-top: 0px;
+        }
     }
 }

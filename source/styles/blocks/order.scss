@@ -3,10 +3,19 @@
     position: relative;
     flex-direction: column;
     width: 370px;
-    height: 489px;
     padding: 64px 25px 37px 25px;
     background: url('/assets/img/order_bg.png') center no-repeat, linear-gradient(43deg, white 0%, #afafaf 59%, #d7d7d7 59%, white 89%, #dedede 100%);
     background-size: cover;
+
+    @include laptop {
+        width: 340px;
+        padding: 55px 25px 30px 25px;
+    }
+
+    @include tablet {
+        width: 370px;
+        padding: 64px 25px 37px 25px;
+    }
 
     &__label {
         position: absolute;
@@ -61,7 +70,7 @@
             right: 17px;
             bottom: 0;
             background-color: $yellow;
-            box-shadow: 2.19px 13.828px 5px 0px rgba(37, 42, 48, 0.29);
+            box-shadow: rem(2.19px) rem(13.828px) rem(5px) 0rem rgba(37, 42, 48, 0.29);
             border-radius: 4px;
         }
     }

@@ -7,17 +7,65 @@
         align-items: center;
         padding-top: 2px;
         padding-bottom: 2px;
+
+        @include hd {
+            justify-content: space-between;
+        }
+
+        @include laptop {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 12px;
+        }
+
+        @include phone {
+            justify-content: center;
+            padding-top: 7px;
+        }
     }
 
     &__logo {
         margin-right: 75px;
         padding-top: 7px;
+        min-width: 180px;
+
+        @include hd {
+            margin-right: 15px;
+        }
+        
+        @include laptop {
+            margin-right: 0px;
+        }
+
+        @include phone {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__info {
+        justify-content: center;
+        width: 47%;
+
+        @include laptop {
+            order: 1;
+            width: 100%;
+        }
     }
 
     &__contacts {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         margin-left: auto;
+
+        @include hd {
+            margin-left: 0px;
+        }
+
+        @include phone {
+            margin-bottom: 20px;
+        }
     }
 }
