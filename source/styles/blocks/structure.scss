@@ -1,7 +1,7 @@
 .structure {
     position: relative;
     padding: 108px 0px;
-    background: $white url('/assets/img/structure_bg.png') 0px 0px no-repeat;
+    background: $white url('../img/structure_bg.png') 0px 0px no-repeat;
     background-size: auto;
     min-height: 600px;
 
@@ -45,7 +45,7 @@
         height: 46vmin;
         bottom: -19px;
         left: 49.3vw;
-        background: url('/assets/img/structure_bg-shape.png') center no-repeat;
+        background: url('../img/structure_bg-shape.png') center no-repeat;
         background-size: contain;
     }
 }

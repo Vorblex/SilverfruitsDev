@@ -1,7 +1,7 @@
 .action {
     position: relative;
     z-index: 1;
-    background: #1f2147 url('/assets/img/action-girl_bg.png') -11px 85% no-repeat;
+    background: #1f2147 url('../img/action-girl_bg.png') -11px 85% no-repeat;
     background-size: auto 113%;
 
     @include laptop {

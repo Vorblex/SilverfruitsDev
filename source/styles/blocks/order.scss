@@ -4,7 +4,7 @@
     flex-direction: column;
     width: 370px;
     padding: 64px 25px 37px 25px;
-    background: url('/assets/img/order_bg.png') center no-repeat, linear-gradient(43deg, white 0%, #afafaf 59%, #d7d7d7 59%, white 89%, #dedede 100%);
+    background: url('../img/order_bg.png') center no-repeat, linear-gradient(43deg, white 0%, #afafaf 59%, #d7d7d7 59%, white 89%, #dedede 100%);
     background-size: cover;
 
     @include laptop {
