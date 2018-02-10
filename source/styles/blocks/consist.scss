@@ -1,7 +1,11 @@
 .consist {
+    position: relative;
+    z-index: 0;
     background: $blue;
 
     &__inner {
+        position: relative;
+        z-index: 5;
         padding: 18px 0px;
         text-align: center;
     }

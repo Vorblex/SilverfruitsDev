@@ -1,5 +1,6 @@
 .structure {
     position: relative;
+    z-index: 1;
     padding: 108px 0px;
     background: $white url('../img/structure_bg.png') 0px 0px no-repeat;
     background-size: auto;
@@ -7,7 +8,7 @@
 
     &__inner {
         position: relative;
-        z-index: 1;
+        z-index: 15;
     }
 
     &__title {
@@ -41,11 +42,23 @@
     &::before {
         content: "";
         position: absolute;
+        z-index: 10;
         width: 59.5vmin;
         height: 46vmin;
-        bottom: -19px;
+        bottom: -1.2rem;
         left: 49.3vw;
         background: url('../img/structure_bg-shape.png') center no-repeat;
         background-size: contain;
     }
+
+    &__svg {
+        position: absolute;
+        z-index: 1;
+        width: 103%;
+        height: 75px;
+        bottom: -1px;
+        transform: translateX(-2%);
+        fill: $blue;
+    }
+
 }
